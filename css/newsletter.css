@@ -1,0 +1,54 @@
+/* Newsletter Section Styling */
+.newsletter-section {
+    padding: 90px 0;
+    margin-top: 20px;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.newsletter-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+    color: #000;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.social-link {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    transition: color 0.3s ease;
+    margin-bottom: 150px;
+    margin-top: 60px;
+}
+
+.social-link:hover {
+    color: #be9218;
+}
+
+.newsletter-footer {
+    font-size: 12px;
+    color: #000000;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .social-links {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}

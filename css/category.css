@@ -1,0 +1,50 @@
+/* Styling untuk section kategori */
+#categories {
+  margin-top: 20px; /* Jarak dari galeri */
+  text-align: center;
+}
+
+#categories .categories-row {
+  display: flex;
+  justify-content: center; /* Pusatkan semua kategori */
+  flex-wrap: wrap; /* Jika tidak cukup ruang, turun ke baris berikutnya */
+  gap: 10px; /* Jarak antar kategori */
+}
+
+#categories .category-box {
+  border: 1px solid black; /* Outline kotak */
+  padding: 10px 20px; /* Ruang di dalam kotak */
+  font-size: 1rem; /* Ukuran teks */
+  text-align: center; /* Pusatkan teks */
+  text-transform: uppercase;
+  cursor: pointer; /* Tambahkan pointer untuk interaktivitas */
+  transition: background-color 0.3s, color 0.3s; /* Animasi hover */
+}
+
+#categories .category-box:hover {
+  background-color: black; /* Ubah warna background saat hover */
+  color: white; /* Teks menjadi putih */
+}
+
+@media screen and (max-width: 768px) {
+  #categories .categories-row {
+    flex-wrap: wrap; /* Pastikan item turun ke baris berikutnya */
+    justify-content: center; /* Pusatkan isi di perangkat kecil */
+  }
+
+  #categories .category-box {
+    flex: 1 0 45%; /* Kotak menjadi 45% lebar untuk 2 kolom */
+    max-width: 45%; /* Batas lebar agar tetap proporsional */
+    margin: 5px; /* Tambahkan sedikit margin untuk jarak antar kolom */
+    text-align: center; /* Pusatkan teks */
+    padding: 10px 15px; /* Ukuran padding lebih kecil di perangkat kecil */
+    font-size: 0.85rem; /* Ukuran font lebih kecil */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #categories .category-box {
+    flex: 1 0 25%;
+    max-width: 45%; 
+  }
+}

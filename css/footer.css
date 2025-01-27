@@ -1,0 +1,124 @@
+.footer {
+    background-color: #ffffff;
+    padding: 15px 0;
+    margin-left: 0px;
+    color: #333;
+    font-size: 14px;
+    line-height: 1;
+    border-top: 0.8px solid #ddd;
+    align-items: center;
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    /* padding: 0 15px; */
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Left Section: Contact */
+.footer-left {
+    display: flex;
+    gap: 0px;
+    flex-wrap: wrap;
+    color: #000000;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #bb961b;
+}
+
+/* Center Section: Message and Social Media */
+.footer-center {
+    text-align: center;
+    flex: 1;
+}
+
+.footer-message {
+    font-size: 14px;
+    /* font-weight: 600; */
+    /* text-transform: uppercase; */
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+}
+
+.social-icon {
+    display: block;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon svg {
+    width: 16px;
+    height: 16px;
+    fill: #000;
+    /* Sesuaikan warna */
+}
+
+.social-icon:hover svg {
+    transform: scale(1.2);
+    fill: #b6991a;
+    /* Sesuaikan efek hover */
+}
+  
+/* Right Section: Copyright */
+.footer-right {
+    font-size: 0.8rem;
+    color: #777;
+    text-align: right;
+}
+
+.footer-copyright {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #000000;
+    text-align: right;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .footer-right {
+        margin-top: 10px;
+    }
+}
+.marginright-gap {
+    margin-right: 5px;
+}
+.marginleft-gap {
+    margin-left: 5px;
+}
